@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <form>
+        <div class="num">
+          <p>Day</p>
+          <input
+            type="number"
+            placeholder="DD"
+            id="day1"
+            min="1"
+            max="31"
+            required
+          />
+        </div>
+        <div class="num">
+          <p>Month</p>
+          <input
+            type="number"
+            placeholder="MM"
+            id="month1"
+            min="1"
+            max="12"
+            required
+          />
+        </div>
+        <div class="num">
+          <p>Year</p>
+          <input
+            type="number"
+            placeholder="YYYY"
+            id="year1"
+            min="1"
+            max="2023"
+            required
+          />
+        </div>
+        <i class="bx bx-down-arrow-alt" onclick="calculate()"></i>
+      </form>
+      <hr />
+      <div>
+        <span id="year">- -</span>
+        <h1>years</h1>
+        <br />
+      </div>
+      <div>
+        <span id="months">- -</span>
+        <h1>months</h1>
+        <br />
+      </div>
+      <div>
+        <span id="day">- -</span>
+        <h1>days</h1>
+      </div>
+    </div>
+
+    <!--JS LINK-->
+    <script src="index.js"></script>
+  </body>
+</html>
